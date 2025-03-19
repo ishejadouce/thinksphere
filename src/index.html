@@ -1,6 +1,66 @@
 {% extends 'layout/app.html' %}
-
+{% load static %}
 {% block content %}
-    <h1>Homepage</h1>
+<header class="header-normal v-dark-head header-corporate section-padding dsn-header-animation">
+    <div class="box-img h-100 w-100 h-100 p-absolute top-0 right-0 before-z-index" data-overlay="5">
+
+        <img class="cover-bg-img" src="{% static 'assets/img/bg1.jpg' %}" alt="">
+    </div>
+
+    <div class="container p-relative z-index-1 dsn-hero-parallax-title">
+        <div class="content p-relative pt-section">
+            <h1 class="title-lg d-flex flex-column text-upper">
+                <span>We</span>
+                <span>Are</span>
+                <span class="end">ThinkSphere</span>
+            </h1>
+            <div class="description">
+                <p>Building Futures by bridging agricultural infrastructure for sustainable growth and development</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-head w-100 left-0 p-absolute bottom-0 z-index-2 pb-40">
+        <div class="container d-flex justify-content-between">
+            <div class="dsn-btn dsn-btn-shape rotate-icon d-flex">
+
+                <a class="button background-section" href="#page_wrapper" rel="nofollow"
+                    data-dsn-option='{"ease": "power4.inOut" , "duration" : 1.5}'>
+                    <span class="title-btn text-upper p-relative  z-index-1 heading-color"
+                        data-animate-text="Scroll Down">
+                        <span>Scroll Down</span>
+                    </span>
+                </a>
+
+                <span class="icon background-section">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                        </path>
+                    </svg>
+                </span>
+
+            </div>
+
+            <div class="dsn-btn dsn-btn-shape d-flex">
+
+                <a class="button background-section effect-ajax" href="contact.html"
+                    data-dsn-text="Contact Mes">
+                    <span class="title-btn text-upper p-relative  z-index-1 heading-color"
+                        data-animate-text="Contact Me">
+                        <span>Contact Us</span>
+                    </span>
+                </a>
+
+                <span class="icon background-section">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                        </path>
+                    </svg>
+                </span>
+
+            </div>
+        </div>
+    </div>
+</header>
 {% endblock content %}
     
