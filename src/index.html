@@ -62,5 +62,61 @@
         </div>
     </div>
 </header>
+
+<section class="about-has-image section-padding">
+    <div class="container">
+        <div class="d-grid grid-half-1 align-items-center">
+            <div class="box-text pt-60 pb-60">
+                <div class="section-title d-flex flex-column">
+                    <span class="sub-heading mb-10 dsn-up">About Us</span>
+
+                    <h2 class="title mb-30 dsn-fill">WHAT WE DO</h2>
+
+                    <p class="dsn-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, qui cum sed consectetur dolor eius. Maxime ipsa reiciendis quibusdam ipsum pariatur unde hic nostrum quis, quisquam veniam quaerat laudantium minus.</p>
+
+                    <div class="dsn-up">
+                        <div class="dsn-btn dsn-btn-shape d-flex mt-30">
+
+                            <a class="button v-dark background-section effect-ajax" href="about.html">
+                                <span class="title-btn text-upper p-relative  z-index-1 heading-color"
+                                    data-animate-text="About Us">
+                                    <span>About Us</span>
+                                </span>
+                            </a>
+
+                            <span class="icon v-dark background-section">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path
+                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                    </path>
+                                </svg>
+                            </span>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="box-img">
+                <div class="img-inner"
+                    data-dsn-animation='{"from":{"x":"100"},"to":{"x":"0"},"responsive":["tablet","desktop"]}'>
+                    <img class="cover-bg-img has-border-radius" src="{% static 'assets/img/1.jpg' %}" alt="">
+                </div>
+
+                <div class="img-inner">
+                    <img class="cover-bg-img has-border-radius" src="{% static 'assets/img/2.jpg' %}"
+                        alt="">
+                </div>
+
+                <div class="img-inner"
+                    data-dsn-animation='{"from":{"y":"-70"},"to":{"y":"0"},"responsive":["tablet","desktop"]}'>
+                    <img class="cover-bg-img has-border-radius" src="{% static 'assets/img/4.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 {% endblock content %}
     
