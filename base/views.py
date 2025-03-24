@@ -1,6 +1,7 @@
 from base.forms import *
 from base.models import *
-from django.shortcuts import render
+from django.contrib import messages
+from django.shortcuts import render, redirect
 
 def home(request):
     return render(request, 'index.html')
