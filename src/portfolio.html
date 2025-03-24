@@ -1,1 +1,199 @@
-<h1>Portfolio page</h1>
+{% extends 'layout/app.html' %}
+{% load static %}
+{% block content %}
+<div id="page_wrapper" class="wrapper">
+
+    <!-- ========== Portfolio ========== -->
+    <div class="our-work work-photography EXFOLIO-swiper-slider dsn-swiper h-100-v p-relative pt-80"
+        data-dsn-option='{"spaceBetween":30,"allowTouchMove":true,"centeredSlides":true,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":true,"parallax":true,"slidesPerGroup":1,"slidesPerView":1.5,"speed":1000,"effect":"slide"}'>
+        <div class="dsn-posts">
+            <div class="swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <article class="dsn-item-post grid-item over-hidden p-relative swiper-slide">
+
+                        <div class="box-content d-flex flex-column align-items-center">
+                            <div class="box-image-bg w-100 before-z-index dsn-swiper-parallax-transform">
+                                <img src="{% static 'assets/img/hero.jpg' %}"
+                                    class="cover-bg-img has-border-radius" alt="" />
+                            </div>
+
+                            <div
+                                class="post-content p-relative z-index-1 d-flex flex-column w-100 bottom-0">
+
+                                <div class="post-info text-center d-grid grid-md-3">
+                                    <div class="cat d-flex align-items-end">
+                                        <span class="v-light background-section heading-color">22nd/Jan</span>
+                                        <span class="v-light background-section heading-color">Challenge 1</span>
+                                    </div>
+
+                                    <h2 class="title text-upper">
+                                        <a href="https://www.youtube.com/@THINKSPHERE-v9o" class="effect-ajax"
+                                            data-dsn-ajax="work">Our <br> Introdution</a>
+                                    </h2>
+
+                                    <a href="https://www.youtube.com/@THINKSPHERE-v9o"
+                                        class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end ml-auto">
+                                        <span class="icon background-section v-light">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                <path
+                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                </path>
+                                            </svg>
+                                        </span>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="dsn-item-post grid-item over-hidden p-relative swiper-slide">
+
+                        <div class="box-content d-flex flex-column align-items-center">
+                            <div class="box-image-bg w-100 before-z-index dsn-swiper-parallax-transform">
+                                <img src="{% static 'assets/img/4.jpg' %}"
+                                    class="cover-bg-img has-border-radius" alt="" />
+                            </div>
+
+                            <div
+                                class="post-content p-relative z-index-1 d-flex flex-column w-100 bottom-0">
+
+                                <div class="post-info text-center d-grid grid-md-3">
+                                    <div class="cat d-flex align-items-end">
+                                        <span class="v-light background-section heading-color">10th/Feb</span>
+                                        <span
+                                            class="v-light background-section heading-color">Challenge 2</span>
+                                    </div>
+
+                                    <h2 class="title text-upper">
+                                        <a href="https://www.youtube.com/@THINKSPHERE-v9o" class="effect-ajax"
+                                            data-dsn-ajax="work">Our Great<br> Africa</a>
+                                    </h2>
+
+                                    <a href="https://www.youtube.com/@THINKSPHERE-v9o"
+                                        class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end ml-auto">
+                                        <span class="icon background-section v-light">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                <path
+                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                </path>
+                                            </svg>
+                                        </span>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="dsn-item-post grid-item over-hidden p-relative swiper-slide">
+
+                        <div class="box-content d-flex flex-column align-items-center">
+                            <div class="box-image-bg w-100 before-z-index dsn-swiper-parallax-transform">
+                                <img src="{% static 'assets/img/2.jpg' %}"
+                                    class="cover-bg-img has-border-radius" alt="" />
+                            </div>
+
+                            <div
+                                class="post-content p-relative z-index-1 d-flex flex-column w-100 bottom-0">
+
+                                <div class="post-info text-center d-grid grid-md-3">
+                                    <div class="cat d-flex align-items-end">
+                                        <span class="v-light background-section heading-color">16th/Feb</span>
+                                        <span class="v-light background-section heading-color">Challenge 3</span>
+                                    </div>
+
+                                    <h2 class="title text-upper">
+                                        <a href="https://www.youtube.com/@THINKSPHERE-v9o"  class="effect-ajax"
+                                            data-dsn-ajax="work">Help<br>Lab</a>
+                                    </h2>
+
+                                    <a href="https://www.youtube.com/@THINKSPHERE-v9o" 
+                                        class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end ml-auto">
+                                        <span class="icon background-section v-light">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                <path
+                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                </path>
+                                            </svg>
+                                        </span>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="dsn-item-post grid-item over-hidden p-relative swiper-slide">
+
+                        <div class="box-content d-flex flex-column align-items-center">
+                            <div class="box-image-bg w-100 before-z-index dsn-swiper-parallax-transform">
+                                <img src="{% static 'assets/img/background.jpg' %}"
+                                    class="cover-bg-img has-border-radius" alt="" />
+                            </div>
+
+                            <div
+                                class="post-content p-relative z-index-1 d-flex flex-column w-100 bottom-0">
+
+                                <div class="post-info text-center d-grid grid-md-3">
+                                    <div class="cat d-flex align-items-end">
+                                        <span
+                                            class="v-light background-section heading-color">09th/March</span>
+                                        <span class="v-light background-section heading-color">Challenge 4</span>
+                                    </div>
+
+                                    <h2 class="title text-upper">
+                                        <a href="https://www.youtube.com/@THINKSPHERE-v9o" class="effect-ajax"
+                                            data-dsn-ajax="work">Hunt for <br> Treasure </a>
+                                    </h2>
+
+                                    <a href="https://www.youtube.com/@THINKSPHERE-v9o"
+                                        class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end ml-auto">
+                                        <span class="icon background-section v-light">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                <path
+                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                </path>
+                                            </svg>
+                                        </span>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="prev-paginate">
+                    <span class="dsn-icon dsn-icon-heading-color background-main">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15"
+                            fill="">
+                            <path
+                                d="M6.81496 0.699692L7.66349 1.54822L2.31371 6.898L16.4017 6.88707L16.4008 8.08442L2.31278 8.09535L7.65426 13.4368L6.80442 14.2867L0.0161911 7.49846L6.81496 0.699692Z"
+                                fill=""></path>
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="next-paginate">
+                    <span class="dsn-icon dsn-icon-heading-color">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15"
+                            fill="">
+                            <path
+                                d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z"
+                                fill=""></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== End Portfolio ========== -->
+</div>
+{% endblock content %}
+    

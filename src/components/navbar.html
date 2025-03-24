@@ -2,7 +2,7 @@
 
 <header id="site_menu_header" class="site-header d-none">
     <div class="main-logo">
-        <a href="index.html" data-dsn-text="ThinkSphere" class="custom-logo-link main-brand effect-ajax" rel="home"
+        <a href="{% url 'base:home' %}" data-dsn-text="ThinkSphere" class="custom-logo-link main-brand effect-ajax" rel="home"
             aria-current="page">
             <!-- <img src="{% static 'assets/img/logo.png' %}" class="custom-logo logo-light" alt="ThinkSphere" style="width: 60px;" />
             <img src="{% static 'assets/img/logo.png' %}" class="custom-logo logo-dark" alt="ThinkSphere" style="width: 60px;" /> -->
@@ -24,7 +24,7 @@
             </li>
             <li class="nav-item ">
                 <a title="About" href="{% url 'base:portfolio' %}">
-                    <span class="overflow">Portfolio</span>
+                    <span class="overflow">Projects</span>
                 </a>
             </li>
             <li class="nav-item ">

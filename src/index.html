@@ -4,7 +4,7 @@
 <header class="header-normal v-dark-head header-corporate section-padding dsn-header-animation">
     <div class="box-img h-100 w-100 h-100 p-absolute top-0 right-0 before-z-index" data-overlay="5">
 
-        <img class="cover-bg-img" src="{% static 'assets/img/bg1.jpg' %}" alt="">
+        <img class="cover-bg-img" src="{% static 'assets/img/bg.jpg' %}" alt="">
     </div>
 
     <div class="container p-relative z-index-1 dsn-hero-parallax-title">
@@ -43,8 +43,8 @@
 
             <div class="dsn-btn dsn-btn-shape d-flex">
 
-                <a class="button background-section effect-ajax" href="contact.html"
-                    data-dsn-text="Contact Mes">
+                <a class="button background-section effect-ajax" href="{% url 'base:contact' %}"
+                    data-dsn-text="Contact Us">
                     <span class="title-btn text-upper p-relative  z-index-1 heading-color"
                         data-animate-text="Contact Me">
                         <span>Contact Us</span>
@@ -124,21 +124,22 @@
         <div class="section-title mb-70 d-flex flex-column">
             <span class="sub-heading mb-10 dsn-up">Our Activities</span>
 
-            <h2 class="title dsn-fill">Explore More<br>
-                About Us</h2>
+            <h2 class="title dsn-fill">Explore our<br>Proposed Solutions</h2>
         </div>
     </div>
     <div class="container">
         <div class="dsn-cards use-v-scroll p-relative"
             data-dsn-option='{"speed" : 4,"center_screen" : true }'>
             <div class="dsn-posts">
+
+                <!-- ========== green hydron energy ========== -->
                 <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius">
 
                     <div class="box-content d-flex ">
                         <div class="img-cat w-100">
                             <div
                                 class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform">
-                                <img src="https://template.dsngrid.com/exfolio/light/assets/img/portfolio/project1/1.jpg"
+                                <img src="{% static 'assets/img/1bg.jpg' %}"
                                     class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                             </div>
                         </div>
@@ -149,13 +150,12 @@
                             <div class="post-info d-flex justify-content-between align-items-center">
                                 <h2 class="post-title word-wrap d-inline-block title-block">
                                     <a href="project-1.html" class="effect-ajax init-color"
-                                        data-dsn-ajax="work">01/February</a>
+                                        data-dsn-ajax="work">001</a>
                                 </h2>
 
                                 <div class="cat background-main d-flex">
-                                    <span class="background-section heading-color">Challenge 1</span>
-                                    <span class="background-section heading-color">Team
-                                        Strategy</span>
+                                    <span class="background-section heading-color">Green Hydrogen Energy</span>
+                                    <span class="background-section heading-color">kwasolar Initiative</span>
                                 </div>
 
                                 <a href="project-1.html"
@@ -176,13 +176,14 @@
 
                 </article>
 
+                <!-- ========== Solar Pannels ========== -->
                 <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius">
 
                     <div class="box-content d-flex ">
                         <div class="img-cat w-100">
                             <div
                                 class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform">
-                                <img src="https://template.dsngrid.com/exfolio/light/assets/img/portfolio/project2/1.jpg"
+                                <img src="{% static 'assets/img/solarpannels.jpg' %}"
                                     class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                             </div>
                         </div>
@@ -193,12 +194,12 @@
                             <div class="post-info d-flex justify-content-between align-items-center">
                                 <h2 class="post-title word-wrap d-inline-block title-block">
                                     <a href="project-2.html" class="effect-ajax init-color"
-                                        data-dsn-ajax="work">20/february</a>
+                                        data-dsn-ajax="work">002</a>
                                 </h2>
 
                                 <div class="cat background-main d-flex">
-                                    <span class="background-section heading-color">Challenge 2</span>
-                                    <span class="background-section heading-color">Our Africa</span>
+                                    <span class="background-section heading-color">Solar Pannels</span>
+                                    <span class="background-section heading-color">Kwasolar Initiative</span>
                                 </div>
 
                                 <a href="project-2.html"
@@ -219,13 +220,14 @@
 
                 </article>
 
+                <!-- ========== Water Supply ========== -->
                 <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius">
 
                     <div class="box-content d-flex ">
                         <div class="img-cat w-100">
                             <div
                                 class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform">
-                                <img src="https://template.dsngrid.com/exfolio/light/assets/img/portfolio/project3/1.jpg"
+                                <img src="{% static 'assets/img/7.jpg' %}"
                                     class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                             </div>
                         </div>
@@ -236,12 +238,12 @@
                             <div class="post-info d-flex justify-content-between align-items-center">
                                 <h2 class="post-title word-wrap d-inline-block title-block">
                                     <a href="project-3.html" class="effect-ajax init-color"
-                                        data-dsn-ajax="work">01/March</a>
+                                        data-dsn-ajax="work">003</a>
                                 </h2>
 
                                 <div class="cat background-main d-flex">
-                                    <span class="background-section heading-color">Challenge 3</span>
-                                    <span class="background-section heading-color">Help Lab</span>
+                                    <span class="background-section heading-color">Water Supply</span>
+                                    <span class="background-section heading-color">ekwasolar initiative</span>
                                 </div>
 
                                 <a href="project-3.html"
@@ -356,7 +358,7 @@
                         data-swiper-parallax-opacity="0">
                         <div class="text">
                             <h4 class="title-block text-upper mb-5">Andrew Thon Cisse</h4>
-                            <span class="text-upper">Video Grapher</span>
+                            <span class="text-upper">Videographer</span>
                         </div>
 
                     </div>
@@ -383,7 +385,7 @@
                     <div class="content w-100 p-absolute bottom-0 text-center"
                         data-swiper-parallax-opacity="0">
                         <div class="text">
-                            <h4 class="title-block text-upper mb-5">ISHEJA Ldouce</h4>
+                            <h4 class="title-block text-upper mb-5">ISHEJA Ladouce</h4>
                             <span class="text-upper">Analyst</span>
                         </div>
 
